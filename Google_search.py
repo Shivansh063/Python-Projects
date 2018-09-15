@@ -18,7 +18,7 @@ time.sleep(2)
 
 
 print var1
-print var2
+print var2 
 
 # Concating two strings
 n3 = n1+" "+n2
