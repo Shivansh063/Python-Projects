@@ -21,9 +21,9 @@ print var1
 print var2 
 
 # Concating two strings
-n3 = n1+" "+n2
+result = var1+" "+var2
 
 # After Concatination, Particular String will be on google new tab
-webbrowser.open_new_tab('http://google.com/search?btnG=1&q=%s'%n3)
+webbrowser.open_new_tab('http://google.com/search?btnG=1&q=%s'%result)
 
 
