@@ -26,7 +26,7 @@ result = var_1 + " " + var_2
 
 # google images will open in new tab on topic stored in variable result 
 webbrowser.open_new_tab('http://www.google.com/search?tbm=isch&q=%s'%result)
- 
+  
 
 
 
