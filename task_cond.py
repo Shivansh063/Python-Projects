@@ -47,6 +47,13 @@ if y == 4 :
         	print ("Active Internet Connection")
 	except urllib2.URLError as err: 
         	print ("Not Connected")
+if y == 5 :
+	print ("Checking Your WIFI status ..")
+	time.sleep(2)
+	commands.getoutput('nmcli radio wifi off')
+	time.sleep(1)
+	print ("WIFI Closed")
+	
 
 if y == 6 :
 	print ("Date and Time in Particular Format ..")
