@@ -3,6 +3,9 @@
 import platform
 import commands
 import os
+import urllib2
+import signal
+import time
 
    
 choice='''
@@ -35,5 +38,25 @@ if y == 3 :
 	print commands.getoutput('platform.system()')
 	print ("Name of Operating System ")
 	print commands.getoutput('platform.uname()')
+
+if y == 4 :
+	print ("Checking Your Internet Connection ..")
+	time.sleep(2)
+	try:
+ 		urllib2.urlopen('http://216.58.192.142', timeout=1)
+        	print ("Active Internet Connection")
+	except urllib2.URLError as err: 
+        	print ("Not Connected")
+
+if y == 6 :
+	print ("Date and Time in Particular Format ..")
+	print commands.getoutput('date +"%d-%b-%Y   %A"')
+	print commands.getoutput('date +"%T"')
+
+if y == 7 :
+	print ("Please Wait while Logging you out .. ")
+	commands.getoutput('sudo pkill -u shivansh')
+
+
 
 
