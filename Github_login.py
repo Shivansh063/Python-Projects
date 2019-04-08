@@ -35,9 +35,3 @@ input('Press anything to quit')
 driver.quit() 
 print("Finished") 
 
-
-'''
-
-from getpass import getpass 
-pwd = getpass('Enter Password:')  
-'''
